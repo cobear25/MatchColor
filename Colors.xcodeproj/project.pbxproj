@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3452029192EC600002CF49B /* ColorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A3452028192EC600002CF49B /* ColorButton.m */; };
 		A3F72798185FF3C60065B060 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F72797185FF3C60065B060 /* Foundation.framework */; };
 		A3F7279A185FF3C60065B060 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F72799185FF3C60065B060 /* CoreGraphics.framework */; };
 		A3F7279C185FF3C60065B060 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F7279B185FF3C60065B060 /* UIKit.framework */; };
@@ -19,6 +20,8 @@
 		A3F727B3185FF3C60065B060 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F7279B185FF3C60065B060 /* UIKit.framework */; };
 		A3F727BB185FF3C60065B060 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A3F727B9185FF3C60065B060 /* InfoPlist.strings */; };
 		A3F727BD185FF3C60065B060 /* ColorsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3F727BC185FF3C60065B060 /* ColorsTests.m */; };
+		A3F727C7185FF4070065B060 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3F727C6185FF4070065B060 /* Storyboard.storyboard */; };
+		A3F727CA185FFAA70065B060 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3F727C9185FFAA70065B060 /* GameViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A3452027192EC600002CF49B /* ColorButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorButton.h; sourceTree = "<group>"; };
+		A3452028192EC600002CF49B /* ColorButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorButton.m; sourceTree = "<group>"; };
 		A3F72794185FF3C60065B060 /* Colors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Colors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3F72797185FF3C60065B060 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A3F72799185FF3C60065B060 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +53,9 @@
 		A3F727B8185FF3C60065B060 /* ColorsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ColorsTests-Info.plist"; sourceTree = "<group>"; };
 		A3F727BA185FF3C60065B060 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A3F727BC185FF3C60065B060 /* ColorsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorsTests.m; sourceTree = "<group>"; };
+		A3F727C6185FF4070065B060 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		A3F727C8185FFAA70065B060 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		A3F727C9185FFAA70065B060 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A3DA76C4192DA7D3003079A3 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
 		A3F7278B185FF3C60065B060 = {
 			isa = PBXGroup;
 			children = (
@@ -107,10 +122,16 @@
 		A3F7279D185FF3C60065B060 /* Colors */ = {
 			isa = PBXGroup;
 			children = (
+				A3DA76C4192DA7D3003079A3 /* iPad */,
 				A3F727A6185FF3C60065B060 /* AppDelegate.h */,
 				A3F727A7185FF3C60065B060 /* AppDelegate.m */,
 				A3F727A9185FF3C60065B060 /* Images.xcassets */,
 				A3F7279E185FF3C60065B060 /* Supporting Files */,
+				A3F727C6185FF4070065B060 /* Storyboard.storyboard */,
+				A3F727C8185FFAA70065B060 /* GameViewController.h */,
+				A3F727C9185FFAA70065B060 /* GameViewController.m */,
+				A3452027192EC600002CF49B /* ColorButton.h */,
+				A3452028192EC600002CF49B /* ColorButton.m */,
 			);
 			path = Colors;
 			sourceTree = "<group>";
@@ -221,6 +242,7 @@
 			files = (
 				A3F727A2185FF3C60065B060 /* InfoPlist.strings in Resources */,
 				A3F727AA185FF3C60065B060 /* Images.xcassets in Resources */,
+				A3F727C7185FF4070065B060 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +262,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3F727A8185FF3C60065B060 /* AppDelegate.m in Sources */,
+				A3F727CA185FFAA70065B060 /* GameViewController.m in Sources */,
 				A3F727A4185FF3C60065B060 /* main.m in Sources */,
+				A3452029192EC600002CF49B /* ColorButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,7 +386,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Colors/Colors-Prefix.pch";
 				INFOPLIST_FILE = "Colors/Colors-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -375,7 +401,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Colors/Colors-Prefix.pch";
 				INFOPLIST_FILE = "Colors/Colors-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -441,6 +469,7 @@
 				A3F727C2185FF3C60065B060 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A3F727C3185FF3C60065B060 /* Build configuration list for PBXNativeTarget "ColorsTests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +478,7 @@
 				A3F727C5185FF3C60065B060 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
