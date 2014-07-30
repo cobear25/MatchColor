@@ -8,6 +8,7 @@
 
 #import "GameViewController.h"
 #import "ColorButton.h"
+#import "GameOverView.h"
 
 @interface GameViewController () <UIAlertViewDelegate>
 @property (strong, nonatomic) IBOutletCollection(ColorButton) NSArray *buttons;
@@ -15,6 +16,8 @@
 @property (assign, nonatomic) NSInteger indexToMatch;
 @property (assign, nonatomic) double timePassed;
 @property (strong, nonatomic) NSTimer *timer;
+
+@property (strong, nonatomic) GameOverView *gameOverView;
 
 @end
 
@@ -27,6 +30,11 @@
     [self.navigationController setNavigationBarHidden:YES];
     [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationSlide];
     [self shuffleButtons];
+    self.gameOverView = [[GameOverView alloc] initWithFrame:self.view.frame];
+    self.gameOverView.hidden = YES;
+    [self.view addSubview:self.gameOverView];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(againButtonPressed) name:@"againButtonPressed" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(quitButtonPressed) name:@"quitButtonPressed" object:nil];
 }
 
 - (void)viewDidLayoutSubviews
@@ -48,8 +56,8 @@
         CGFloat y = (button.tag / 2) * (screenHeight/4.0);
 
         [button setFrame:CGRectMake(x, y, screenWidth/2.0, screenHeight/4.0)];
-        [button.titleLabel setFont:[UIFont fontWithName:@"Menlo-Bold" size:20]];
-        [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [button.titleLabel setFont:[UIFont fontWithName:@"Optima-ExtraBlack" size:self.view.frame.size.width/16]];
+        [button setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
     }];
 }
 - (void)didReceiveMemoryWarning
@@ -90,8 +98,18 @@
     if (correct == 8)
     {
         [self.timer invalidate];
-        [[[UIAlertView alloc] initWithTitle:@"You Win!" message:@"Congratulations! Would you like to go again?" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+        self.gameOverView.hidden = NO;
     }
+}
+
+- (void)againButtonPressed {
+    self.gameOverView.hidden = YES;
+    [self.timer fire];
+    [self shuffleButtons];
+}
+- (void)quitButtonPressed {
+    self.gameOverView.hidden = YES;
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 - (void)shuffleButtons

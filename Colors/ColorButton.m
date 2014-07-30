@@ -50,7 +50,7 @@
     }
     else
     {
-        [self setTitle:[NSString stringWithFormat:@"", self.index] forState:UIControlStateNormal];
+        [self setTitle:@"" forState:UIControlStateNormal];
     }
 }
 @end

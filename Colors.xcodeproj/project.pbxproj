@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		A3452029192EC600002CF49B /* ColorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A3452028192EC600002CF49B /* ColorButton.m */; };
+		A372457219885484000A5317 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A372457119885484000A5317 /* HomeViewController.m */; };
+		A372457619885882000A5317 /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = A372457419885882000A5317 /* title.png */; };
+		A372457719885882000A5317 /* title@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A372457519885882000A5317 /* title@2x.png */; };
+		A3A36DDB196CA7CA00EF95CB /* GameOverView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A36DDA196CA7CA00EF95CB /* GameOverView.m */; };
+		A3E99F1B197F1AE400338597 /* Storyboard-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3E99F1A197F1AE400338597 /* Storyboard-iPad.storyboard */; };
 		A3F72798185FF3C60065B060 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F72797185FF3C60065B060 /* Foundation.framework */; };
 		A3F7279A185FF3C60065B060 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F72799185FF3C60065B060 /* CoreGraphics.framework */; };
 		A3F7279C185FF3C60065B060 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F7279B185FF3C60065B060 /* UIKit.framework */; };
@@ -37,6 +42,13 @@
 /* Begin PBXFileReference section */
 		A3452027192EC600002CF49B /* ColorButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorButton.h; sourceTree = "<group>"; };
 		A3452028192EC600002CF49B /* ColorButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorButton.m; sourceTree = "<group>"; };
+		A372457019885484000A5317 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		A372457119885484000A5317 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		A372457419885882000A5317 /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
+		A372457519885882000A5317 /* title@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "title@2x.png"; sourceTree = "<group>"; };
+		A3A36DD9196CA7CA00EF95CB /* GameOverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverView.h; sourceTree = "<group>"; };
+		A3A36DDA196CA7CA00EF95CB /* GameOverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverView.m; sourceTree = "<group>"; };
+		A3E99F1A197F1AE400338597 /* Storyboard-iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Storyboard-iPad.storyboard"; sourceTree = "<group>"; };
 		A3F72794185FF3C60065B060 /* Colors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Colors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3F72797185FF3C60065B060 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A3F72799185FF3C60065B060 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -82,6 +94,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A372457319885864000A5317 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A372457419885882000A5317 /* title.png */,
+				A372457519885882000A5317 /* title@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		A3DA76C4192DA7D3003079A3 /* iPad */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,16 +143,22 @@
 		A3F7279D185FF3C60065B060 /* Colors */ = {
 			isa = PBXGroup;
 			children = (
+				A372457319885864000A5317 /* Resources */,
 				A3DA76C4192DA7D3003079A3 /* iPad */,
 				A3F727A6185FF3C60065B060 /* AppDelegate.h */,
 				A3F727A7185FF3C60065B060 /* AppDelegate.m */,
 				A3F727A9185FF3C60065B060 /* Images.xcassets */,
 				A3F7279E185FF3C60065B060 /* Supporting Files */,
 				A3F727C6185FF4070065B060 /* Storyboard.storyboard */,
+				A3E99F1A197F1AE400338597 /* Storyboard-iPad.storyboard */,
 				A3F727C8185FFAA70065B060 /* GameViewController.h */,
 				A3F727C9185FFAA70065B060 /* GameViewController.m */,
 				A3452027192EC600002CF49B /* ColorButton.h */,
 				A3452028192EC600002CF49B /* ColorButton.m */,
+				A3A36DD9196CA7CA00EF95CB /* GameOverView.h */,
+				A3A36DDA196CA7CA00EF95CB /* GameOverView.m */,
+				A372457019885484000A5317 /* HomeViewController.h */,
+				A372457119885484000A5317 /* HomeViewController.m */,
 			);
 			path = Colors;
 			sourceTree = "<group>";
@@ -241,8 +268,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3F727A2185FF3C60065B060 /* InfoPlist.strings in Resources */,
+				A3E99F1B197F1AE400338597 /* Storyboard-iPad.storyboard in Resources */,
 				A3F727AA185FF3C60065B060 /* Images.xcassets in Resources */,
 				A3F727C7185FF4070065B060 /* Storyboard.storyboard in Resources */,
+				A372457619885882000A5317 /* title.png in Resources */,
+				A372457719885882000A5317 /* title@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +294,9 @@
 				A3F727A8185FF3C60065B060 /* AppDelegate.m in Sources */,
 				A3F727CA185FFAA70065B060 /* GameViewController.m in Sources */,
 				A3F727A4185FF3C60065B060 /* main.m in Sources */,
+				A3A36DDB196CA7CA00EF95CB /* GameOverView.m in Sources */,
 				A3452029192EC600002CF49B /* ColorButton.m in Sources */,
+				A372457219885484000A5317 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
