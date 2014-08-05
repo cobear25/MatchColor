@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="1GL-ou-vtK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="1GL-ou-vtK">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -19,18 +19,171 @@
             </objects>
             <point key="canvasLocation" x="-244" y="78"/>
         </scene>
+        <!--Top Scores View Controller-->
+        <scene sceneID="jYp-yU-waz">
+            <objects>
+                <viewController id="P0T-9b-Shx" customClass="TopScoresViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eQc-H6-OkQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="RdD-o4-VDJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ekd-Hj-NB3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Top Scores" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gjf-UT-1ju">
+                                <rect key="frame" x="68" y="20" width="184" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="29"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKS-j0-wj6">
+                                <rect key="frame" x="112" y="78" width="25" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CC9-N6-Dhj">
+                                <rect key="frame" x="112" y="116" width="25" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2g-SH-Y5e">
+                                <rect key="frame" x="112" y="154" width="25" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMh-Bk-ikN">
+                                <rect key="frame" x="112" y="192" width="25" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1g-UZ-ccf">
+                                <rect key="frame" x="112" y="230" width="25" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3.44" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Jd-7G-VdO">
+                                <rect key="frame" x="149" y="78" width="100" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4.65" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="58M-TW-ZUB">
+                                <rect key="frame" x="149" y="116" width="100" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="7.23" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nET-0f-wXT">
+                                <rect key="frame" x="149" y="154" width="100" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="9.43" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFI-rG-7kA">
+                                <rect key="frame" x="149" y="192" width="100" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12.03" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wpd-hX-b4p">
+                                <rect key="frame" x="149" y="230" width="100" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="mdr-Ue-Vik">
+                                <rect key="frame" x="118" y="458" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.86666666670000003" green="0.79607843140000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="Ixd-tU-VWJ"/>
+                                    <constraint firstAttribute="height" constant="90" id="zNK-JY-h3v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="21"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneButtonTapped:" destination="P0T-9b-Shx" eventType="touchUpInside" id="n4e-AL-CFE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="NNW-Vn-8aE">
+                                <rect key="frame" x="118" y="357" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.97254901959999995" green="0.71764705880000002" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="5Cg-4s-kcC"/>
+                                    <constraint firstAttribute="height" constant="90" id="aAw-TT-4B2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="21"/>
+                                <state key="normal" title="Game Center">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="gameCenterButtonTapped:" destination="P0T-9b-Shx" eventType="touchUpInside" id="udU-m2-S3q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.6588235294" green="0.90196078430000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="NNW-Vn-8aE" secondAttribute="centerX" id="1zl-Gq-4dq"/>
+                            <constraint firstAttribute="centerX" secondItem="mdr-Ue-Vik" secondAttribute="centerX" id="hR2-bK-Xcc"/>
+                            <constraint firstItem="mdr-Ue-Vik" firstAttribute="top" secondItem="NNW-Vn-8aE" secondAttribute="bottom" constant="11" id="zNW-zb-lc0"/>
+                            <constraint firstItem="RdD-o4-VDJ" firstAttribute="top" secondItem="mdr-Ue-Vik" secondAttribute="bottom" constant="20" id="zpS-5i-ztA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="gameCenterButton" destination="NNW-Vn-8aE" id="Z8I-VW-L2K"/>
+                        <outlet property="score1Label" destination="5Jd-7G-VdO" id="nMM-i7-BY5"/>
+                        <outlet property="score2Label" destination="58M-TW-ZUB" id="bTb-ba-Yvd"/>
+                        <outlet property="score3Label" destination="nET-0f-wXT" id="h7n-Nn-d3r"/>
+                        <outlet property="score4Label" destination="JFI-rG-7kA" id="SOf-CS-ctM"/>
+                        <outlet property="score5Label" destination="wpd-hX-b4p" id="ou1-wd-Krh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bS3-r0-sdC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="301" y="-593"/>
+        </scene>
         <!--Home View Controller-->
         <scene sceneID="pMT-vo-lob">
             <objects>
                 <viewController id="VVJ-dd-Ca2" customClass="HomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wnR-de-EYe"/>
+                        <viewControllerLayoutGuide type="bottom" id="57G-Ia-IZ4"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ax2-GQ-zwE">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="l03-zK-6hO">
-                                <rect key="frame" x="89" y="213" width="142" height="142"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l03-zK-6hO">
+                                <rect key="frame" x="89" y="272" width="142" height="142"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.6588235294117647" green="0.90196078431372551" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="142" id="APb-R5-w49"/>
+                                    <constraint firstAttribute="height" constant="142" id="mmc-iF-M9d"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="30"/>
                                 <state key="normal" title="Play">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -40,17 +193,24 @@
                                     <segue destination="l9O-vp-Ybt" kind="push" id="52U-Ib-joC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" id="xpg-qU-zSq">
-                                <rect key="frame" x="109" y="363" width="102" height="102"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="xpg-qU-zSq">
+                                <rect key="frame" x="109" y="446" width="102" height="102"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.97254901960784312" green="0.71764705882352942" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="102" id="nPf-Z7-X7P"/>
+                                    <constraint firstAttribute="width" constant="102" id="swh-Sb-G5B"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="21"/>
                                 <state key="normal" title="Top Scores">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="P0T-9b-Shx" kind="modal" id="QHb-6I-s2b"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color Match" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bdD-6O-Nqx">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Color Match" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdD-6O-Nqx">
                                 <rect key="frame" x="20" y="94" width="280" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="39"/>
@@ -59,6 +219,12 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.8666666666666667" green="0.79607843137254897" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="xpg-qU-zSq" secondAttribute="centerX" id="GO1-dO-kMC"/>
+                            <constraint firstAttribute="centerX" secondItem="l03-zK-6hO" secondAttribute="centerX" id="Pe8-g0-qHD"/>
+                            <constraint firstItem="xpg-qU-zSq" firstAttribute="top" secondItem="l03-zK-6hO" secondAttribute="bottom" constant="32" id="f2t-5G-sNa"/>
+                            <constraint firstItem="57G-Ia-IZ4" firstAttribute="top" secondItem="xpg-qU-zSq" secondAttribute="bottom" constant="20" id="lRs-v6-uGY"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="GYA-un-Hk2"/>
                     <connections>
@@ -74,11 +240,15 @@
         <scene sceneID="mop-ut-OQg">
             <objects>
                 <viewController id="l9O-vp-Ybt" customClass="GameViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pxx-qL-67r"/>
+                        <viewControllerLayoutGuide type="bottom" id="4gJ-i2-xRu"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Wpo-Dp-USr">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1jt-aU-xWy" customClass="ColorButton">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jt-aU-xWy" customClass="ColorButton">
                                 <rect key="frame" x="0.0" y="0.0" width="160" height="142"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -89,7 +259,7 @@
                                     <action selector="buttonTapped:" destination="l9O-vp-Ybt" eventType="touchUpInside" id="JNc-4K-kbR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pdi-gf-01j" customClass="ColorButton">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdi-gf-01j" customClass="ColorButton">
                                 <rect key="frame" x="0.0" y="284" width="160" height="142"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -100,7 +270,7 @@
                                     <action selector="buttonTapped:" destination="l9O-vp-Ybt" eventType="touchUpInside" id="sho-3n-kaO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="OBr-Sq-bCu" customClass="ColorButton">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBr-Sq-bCu" customClass="ColorButton">
                                 <rect key="frame" x="0.0" y="142" width="160" height="142"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -111,7 +281,7 @@
                                     <action selector="buttonTapped:" destination="l9O-vp-Ybt" eventType="touchUpInside" id="k83-0p-wbl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zhu-Tr-pvd" customClass="ColorButton">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhu-Tr-pvd" customClass="ColorButton">
                                 <rect key="frame" x="160" y="0.0" width="160" height="142"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -122,7 +292,7 @@
                                     <action selector="buttonTapped:" destination="l9O-vp-Ybt" eventType="touchUpInside" id="LuS-KB-BSu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="x59-Jq-uDJ" customClass="ColorButton">
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x59-Jq-uDJ" customClass="ColorButton">
                                 <rect key="frame" x="0.0" y="426" width="160" height="142"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -133,7 +303,7 @@
                                     <action selector="buttonTapped:" destination="l9O-vp-Ybt" eventType="touchUpInside" id="icd-hM-u7x"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="U4h-hp-Qxw" customClass="ColorButton">
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4h-hp-Qxw" customClass="ColorButton">
                                 <rect key="frame" x="160" y="426" width="160" height="142"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -144,7 +314,7 @@
                                     <action selector="buttonTapped:" destination="l9O-vp-Ybt" eventType="touchUpInside" id="wkF-3q-2cn"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dbW-4X-uSx" customClass="ColorButton">
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbW-4X-uSx" customClass="ColorButton">
                                 <rect key="frame" x="160" y="284" width="160" height="142"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -155,7 +325,7 @@
                                     <action selector="buttonTapped:" destination="l9O-vp-Ybt" eventType="touchUpInside" id="5k3-dz-k6T"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="OgV-Du-nVA" customClass="ColorButton">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OgV-Du-nVA" customClass="ColorButton">
                                 <rect key="frame" x="160" y="142" width="160" height="142"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -168,6 +338,44 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.01176470588" green="0.91764705879999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="OgV-Du-nVA" firstAttribute="leading" secondItem="OBr-Sq-bCu" secondAttribute="trailing" id="0mu-Sl-rNj"/>
+                            <constraint firstItem="x59-Jq-uDJ" firstAttribute="top" secondItem="pdi-gf-01j" secondAttribute="bottom" id="2xD-h6-N94"/>
+                            <constraint firstItem="U4h-hp-Qxw" firstAttribute="leading" secondItem="x59-Jq-uDJ" secondAttribute="trailing" id="3FE-gI-6xL"/>
+                            <constraint firstItem="U4h-hp-Qxw" firstAttribute="top" secondItem="dbW-4X-uSx" secondAttribute="bottom" id="5pb-Kk-IBb"/>
+                            <constraint firstItem="pdi-gf-01j" firstAttribute="top" secondItem="OBr-Sq-bCu" secondAttribute="bottom" priority="999" id="6Rn-NF-cci"/>
+                            <constraint firstItem="pdi-gf-01j" firstAttribute="leading" secondItem="Wpo-Dp-USr" secondAttribute="leading" id="6f2-Mf-53p"/>
+                            <constraint firstItem="OgV-Du-nVA" firstAttribute="top" secondItem="zhu-Tr-pvd" secondAttribute="bottom" id="6pN-y7-nKx"/>
+                            <constraint firstItem="dbW-4X-uSx" firstAttribute="top" secondItem="OgV-Du-nVA" secondAttribute="bottom" id="7BL-Al-41p"/>
+                            <constraint firstItem="zhu-Tr-pvd" firstAttribute="leading" secondItem="1jt-aU-xWy" secondAttribute="trailing" id="A1g-uh-2Ts"/>
+                            <constraint firstItem="U4h-hp-Qxw" firstAttribute="top" secondItem="dbW-4X-uSx" secondAttribute="bottom" id="Csy-we-o45"/>
+                            <constraint firstItem="dbW-4X-uSx" firstAttribute="leading" secondItem="pdi-gf-01j" secondAttribute="trailing" id="EaO-sA-cea"/>
+                            <constraint firstItem="U4h-hp-Qxw" firstAttribute="leading" secondItem="x59-Jq-uDJ" secondAttribute="trailing" id="Ppp-eo-D1n"/>
+                            <constraint firstItem="4gJ-i2-xRu" firstAttribute="top" secondItem="x59-Jq-uDJ" secondAttribute="bottom" id="UXu-UC-cBr"/>
+                            <constraint firstItem="dbW-4X-uSx" firstAttribute="top" secondItem="OgV-Du-nVA" secondAttribute="bottom" id="bOy-71-19x"/>
+                            <constraint firstItem="dbW-4X-uSx" firstAttribute="top" secondItem="OgV-Du-nVA" secondAttribute="bottom" id="eW7-VB-zlQ"/>
+                            <constraint firstItem="pdi-gf-01j" firstAttribute="top" secondItem="OBr-Sq-bCu" secondAttribute="bottom" id="ffO-C8-tfX"/>
+                            <constraint firstAttribute="trailing" secondItem="dbW-4X-uSx" secondAttribute="trailing" id="hYG-1m-ouK"/>
+                            <constraint firstItem="OBr-Sq-bCu" firstAttribute="leading" secondItem="Wpo-Dp-USr" secondAttribute="leading" id="jie-nY-CqC"/>
+                            <constraint firstItem="OgV-Du-nVA" firstAttribute="top" secondItem="zhu-Tr-pvd" secondAttribute="bottom" id="jpT-vm-nFR"/>
+                            <constraint firstItem="x59-Jq-uDJ" firstAttribute="leading" secondItem="Wpo-Dp-USr" secondAttribute="leading" id="ke6-jF-xxG"/>
+                            <constraint firstAttribute="trailing" secondItem="U4h-hp-Qxw" secondAttribute="trailing" id="kss-Gh-iuI"/>
+                            <constraint firstItem="dbW-4X-uSx" firstAttribute="leading" secondItem="pdi-gf-01j" secondAttribute="trailing" id="kxh-39-DNB"/>
+                            <constraint firstAttribute="trailing" secondItem="dbW-4X-uSx" secondAttribute="trailing" id="mjg-Vt-TZE"/>
+                            <constraint firstItem="OBr-Sq-bCu" firstAttribute="top" secondItem="1jt-aU-xWy" secondAttribute="bottom" id="oYO-DT-SX0"/>
+                            <constraint firstItem="1jt-aU-xWy" firstAttribute="top" secondItem="Wpo-Dp-USr" secondAttribute="top" id="p1z-0N-5hF"/>
+                            <constraint firstItem="U4h-hp-Qxw" firstAttribute="top" secondItem="dbW-4X-uSx" secondAttribute="bottom" id="rQt-hZ-GPK"/>
+                            <constraint firstItem="x59-Jq-uDJ" firstAttribute="top" secondItem="pdi-gf-01j" secondAttribute="bottom" priority="999" id="s12-G0-bu2"/>
+                            <constraint firstItem="4gJ-i2-xRu" firstAttribute="top" secondItem="U4h-hp-Qxw" secondAttribute="bottom" id="sco-Rz-yDq"/>
+                            <constraint firstItem="zhu-Tr-pvd" firstAttribute="leading" secondItem="1jt-aU-xWy" secondAttribute="trailing" id="vwj-UM-oyi"/>
+                            <constraint firstAttribute="trailing" secondItem="OgV-Du-nVA" secondAttribute="trailing" id="w9N-L4-mTw"/>
+                            <constraint firstItem="1jt-aU-xWy" firstAttribute="leading" secondItem="Wpo-Dp-USr" secondAttribute="leading" id="waG-g6-N8h"/>
+                            <constraint firstItem="zhu-Tr-pvd" firstAttribute="top" secondItem="Wpo-Dp-USr" secondAttribute="top" id="wgm-5S-OhN"/>
+                            <constraint firstItem="OgV-Du-nVA" firstAttribute="leading" secondItem="OBr-Sq-bCu" secondAttribute="trailing" id="wkA-U8-ddq"/>
+                            <constraint firstItem="OBr-Sq-bCu" firstAttribute="top" secondItem="1jt-aU-xWy" secondAttribute="bottom" id="wmL-2k-0L7"/>
+                            <constraint firstAttribute="trailing" secondItem="zhu-Tr-pvd" secondAttribute="trailing" id="yxF-Wc-bkZ"/>
+                            <constraint firstItem="dbW-4X-uSx" firstAttribute="leading" secondItem="pdi-gf-01j" secondAttribute="trailing" id="zkZ-P2-Kgr"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yem-6D-YAn"/>
                     <nil key="simulatedTopBarMetrics"/>
@@ -190,6 +398,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
 </document>

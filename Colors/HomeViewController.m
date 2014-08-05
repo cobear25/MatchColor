@@ -20,8 +20,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.playButton.frame = CGRectMake(self.view.frame.size.width/2 - self.playButton.frame.size.width/2, self.view.frame.size.height/2 - self.playButton.frame.size.height/2, self.playButton.frame.size.width, self.playButton.frame.size.height);
     [self.topScoresButton.titleLabel setTextAlignment:NSTextAlignmentCenter];
+    self.playButton.frame = CGRectMake(self.view.frame.size.width/2 - self.playButton.frame.size.width/2, self.view.frame.size.height/2 - self.playButton.frame.size.height/2, self.playButton.frame.size.width, self.playButton.frame.size.height);
     self.navigationController.navigationBarHidden = YES;
 }
 

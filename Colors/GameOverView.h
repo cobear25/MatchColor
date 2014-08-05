@@ -10,4 +10,8 @@
 
 @interface GameOverView : UIView
 
+@property UILabel *scoreLabel;
+@property UIButton *againButton;
+@property UIButton *quitButton;
+
 @end

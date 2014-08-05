@@ -44,6 +44,7 @@
     CGFloat screenWidth = screenRect.size.width;
     CGFloat screenHeight = screenRect.size.height;
     [self.buttons enumerateObjectsUsingBlock:^(ColorButton *button, NSUInteger idx, BOOL *stop) {
+        [button setTranslatesAutoresizingMaskIntoConstraints:YES];
         CGFloat x;
         if (button.tag % 2 == 0)
         {
@@ -99,6 +100,20 @@
     {
         [self.timer invalidate];
         self.gameOverView.hidden = NO;
+        if (self.indexToMatch != 1) {
+            [self.gameOverView.againButton setBackgroundColor:[UIColor colorWithRed:168/255.0 green:230/255.0 blue:1 alpha:1]];
+        } else {
+            [self.gameOverView.againButton setBackgroundColor:[UIColor colorWithRed:221/255.0 green:203/255.0 blue:1 alpha:1]];
+        }
+        if (self.indexToMatch != 2) {
+            [self.gameOverView.quitButton setBackgroundColor:[UIColor colorWithRed:1 green:198/255.0 blue:210/255.0 alpha:1]];
+        } else {
+            [self.gameOverView.quitButton setBackgroundColor:[UIColor colorWithRed:248/255.0 green:183/255.0 blue:119/255.0 alpha:1]];
+        }
+        self.gameOverView.scoreLabel.text = [NSString stringWithFormat:@"%.02f", self.timePassed];
+        [self.buttons enumerateObjectsUsingBlock:^(ColorButton *button, NSUInteger idx, BOOL *stop) {
+            [button setTitle:@"" forState:UIControlStateNormal];
+        }];
     }
 }
 

@@ -10,8 +10,6 @@
 
 @interface GameOverView()
 
-@property UIButton *againButton;
-@property UIButton *quitButton;
 @property UILabel *doneLabel;
 
 @end
@@ -49,9 +47,16 @@
         self.doneLabel = [[UILabel alloc] initWithFrame:CGRectMake(viewWidth/2 - viewWidth/3, self.frame.origin.y+40, viewWidth/1.5, 100)];
         self.doneLabel.text = @"Done!";
         self.doneLabel.textAlignment = NSTextAlignmentCenter;
-        self.doneLabel.textColor = [UIColor colorWithWhite:1.0/4.0 alpha:0.5];
+        self.doneLabel.textColor = [UIColor darkGrayColor];
         self.doneLabel.font = [UIFont fontWithName:@"Optima-ExtraBlack" size:60];
         [self addSubview:self.doneLabel];
+
+        // Create score label
+        self.scoreLabel = [[UILabel alloc] initWithFrame:CGRectMake(viewWidth/2 - viewWidth/3, self.doneLabel.frame.origin.y + 50, viewWidth/1.5, 100)];
+        self.scoreLabel.textAlignment = NSTextAlignmentCenter;
+        self.scoreLabel.textColor = [UIColor darkGrayColor];
+        self.scoreLabel.font = [UIFont fontWithName:@"Optima-ExtraBlack" size:30];
+        [self addSubview:self.scoreLabel];
     }
     return self;
 }
