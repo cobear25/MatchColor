@@ -7,6 +7,7 @@
 //
 
 #import "TopScoresViewController.h"
+#import "GameCenterManager.h"
 
 @interface TopScoresViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *score1Label;
@@ -25,6 +26,23 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self.gameCenterButton.titleLabel setTextAlignment:NSTextAlignmentCenter];
+
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"topscores"] != NULL) {
+        NSArray *array = [[NSUserDefaults standardUserDefaults] objectForKey:@"topscores"];
+        self.score1Label.text = [NSString stringWithFormat:@"%.02f", [[array objectAtIndex:0] doubleValue]];
+        if (array.count >= 2) {
+            self.score2Label.text = [NSString stringWithFormat:@"%.02f", [[array objectAtIndex:1] doubleValue]];
+        }
+        if (array.count >= 3) {
+            self.score3Label.text = [NSString stringWithFormat:@"%.02f", [[array objectAtIndex:2] doubleValue]];
+        }
+        if (array.count >= 4) {
+            self.score4Label.text = [NSString stringWithFormat:@"%.02f", [[array objectAtIndex:3] doubleValue]];
+        }
+        if (array.count >= 5) {
+            self.score5Label.text = [NSString stringWithFormat:@"%.02f", [[array objectAtIndex:4] doubleValue]];
+        }
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -33,6 +51,7 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)gameCenterButtonTapped:(id)sender {
+    [[GameCenterManager sharedManager] presentLeaderboardsOnViewController:self];
 }
 - (IBAction)doneButtonTapped:(id)sender {
     [self dismissViewControllerAnimated:YES completion:^{

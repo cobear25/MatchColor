@@ -9,6 +9,7 @@
 #import "GameViewController.h"
 #import "ColorButton.h"
 #import "GameOverView.h"
+#import "GameCenterManager.h"
 
 @interface GameViewController () <UIAlertViewDelegate>
 @property (strong, nonatomic) IBOutletCollection(ColorButton) NSArray *buttons;
@@ -35,6 +36,8 @@
     [self.view addSubview:self.gameOverView];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(againButtonPressed) name:@"againButtonPressed" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(quitButtonPressed) name:@"quitButtonPressed" object:nil];
+    [self.gameOverView removeAd];
+    [self.gameOverView loadAd];
 }
 
 - (void)viewDidLayoutSubviews
@@ -88,18 +91,16 @@
     NSInteger correct = 0;
     for (ColorButton *button in self.buttons)
     {
-        NSLog(@"index: %d", button.index);
-        NSLog(@"to match: %d", self.indexToMatch);
         if (button.index == self.indexToMatch)
         {
             correct += 1;
-            NSLog(@"Correct: %d", correct);
         }
     }
     if (correct == 8)
     {
         [self.timer invalidate];
         self.gameOverView.hidden = NO;
+        [self.gameOverView showAd];
         if (self.indexToMatch != 1) {
             [self.gameOverView.againButton setBackgroundColor:[UIColor colorWithRed:168/255.0 green:230/255.0 blue:1 alpha:1]];
         } else {
@@ -114,17 +115,42 @@
         [self.buttons enumerateObjectsUsingBlock:^(ColorButton *button, NSUInteger idx, BOOL *stop) {
             [button setTitle:@"" forState:UIControlStateNormal];
         }];
+
+        
+        NSMutableArray *oldArray;
+        if ([[NSUserDefaults standardUserDefaults] objectForKey:@"topscores"] == NULL) {
+            oldArray = [[NSMutableArray alloc] init];
+        } else {
+            oldArray = [[[NSUserDefaults standardUserDefaults] objectForKey:@"topscores"] mutableCopy];
+        }
+        [oldArray addObject:[NSDecimalNumber numberWithDouble:self.timePassed]];
+        NSSortDescriptor *lowestToHighest = [NSSortDescriptor sortDescriptorWithKey:@"self" ascending:YES];
+        [oldArray sortUsingDescriptors:[NSArray arrayWithObject:lowestToHighest]];
+
+        if (oldArray.count >= 5) {
+            NSMutableArray *newArray = [[oldArray subarrayWithRange:NSMakeRange(0, 5)] mutableCopy];
+            [[NSUserDefaults standardUserDefaults] setObject:newArray forKey:@"topscores"];
+        } else {
+            [[NSUserDefaults standardUserDefaults] setObject:oldArray forKey:@"topscores"];
+        }
+        NSInteger scoreToSubmit = (NSInteger)(self.timePassed * 100)+1;
+        [[GameCenterManager sharedManager] saveAndReportScore:scoreToSubmit leaderboard:@"FastestTimes" sortOrder:GameCenterSortOrderLowToHigh];
+        [[NSUserDefaults standardUserDefaults] synchronize];
     }
 }
 
 - (void)againButtonPressed {
+    [self.gameOverView removeAd];
     self.gameOverView.hidden = YES;
     [self.timer fire];
     [self shuffleButtons];
+    [self.gameOverView loadAd];
 }
 - (void)quitButtonPressed {
+    [self.gameOverView removeAd];
     self.gameOverView.hidden = YES;
     [self.navigationController popToRootViewControllerAnimated:YES];
+    [self.gameOverView loadAd];
 }
 
 - (void)shuffleButtons

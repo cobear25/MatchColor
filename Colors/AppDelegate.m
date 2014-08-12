@@ -7,11 +7,18 @@
 //
 
 #import "AppDelegate.h"
+#import "Flurry.h"
+#import "FlurryAds.h"
+#import "GameCenterManager.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [Flurry startSession:@"YHG5K4MHTXDH36GWQY87"];
+    [FlurryAds initialize:_window.rootViewController];
+
+    [[GameCenterManager sharedManager] setupManager];
     return YES;
 }
 

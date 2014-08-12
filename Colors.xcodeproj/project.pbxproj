@@ -7,12 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A30A4B7B19933844001E2B81 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A30A4B7A19933844001E2B81 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A30A4B7D19933860001E2B81 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A30A4B7C19933860001E2B81 /* MediaPlayer.framework */; };
+		A30A4B7F1993386C001E2B81 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A30A4B7E1993386C001E2B81 /* Security.framework */; };
+		A30A4B8119933896001E2B81 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A30A4B8019933896001E2B81 /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A30A4B83199338AA001E2B81 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A30A4B82199338AA001E2B81 /* SystemConfiguration.framework */; };
+		A30A4B85199338BC001E2B81 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A30A4B84199338BC001E2B81 /* libz.dylib */; };
 		A3452029192EC600002CF49B /* ColorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A3452028192EC600002CF49B /* ColorButton.m */; };
 		A372457219885484000A5317 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A372457119885484000A5317 /* HomeViewController.m */; };
-		A372457619885882000A5317 /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = A372457419885882000A5317 /* title.png */; };
-		A372457719885882000A5317 /* title@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A372457519885882000A5317 /* title@2x.png */; };
 		A3724583198E9F32000A5317 /* TopScoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3724582198E9F32000A5317 /* TopScoresViewController.m */; };
+		A372458A1991988E000A5317 /* libFlurryAds_5.2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A37245881991988E000A5317 /* libFlurryAds_5.2.0.a */; };
+		A372458B1991988E000A5317 /* libFlurry_5.2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A37245891991988E000A5317 /* libFlurry_5.2.0.a */; };
 		A3A36DDB196CA7CA00EF95CB /* GameOverView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A36DDA196CA7CA00EF95CB /* GameOverView.m */; };
+		A3A62E9D1996B75E00BA3903 /* GameCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A62E981996B75E00BA3903 /* GameCenterManager.m */; };
+		A3A62E9E1996B75E00BA3903 /* NSDataAES256.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A62E9A1996B75E00BA3903 /* NSDataAES256.m */; };
+		A3A62E9F1996B75E00BA3903 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A62E9C1996B75E00BA3903 /* Reachability.m */; };
+		A3A62EA11996B77300BA3903 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A62EA01996B77300BA3903 /* GameKit.framework */; };
+		A3A62EAA199725E200BA3903 /* icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A3A62EA2199725E200BA3903 /* icon-60@2x.png */; };
+		A3A62EAB199725E200BA3903 /* icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = A3A62EA3199725E200BA3903 /* icon-76.png */; };
+		A3A62EAC199725E200BA3903 /* icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A3A62EA4199725E200BA3903 /* icon-76@2x.png */; };
+		A3A62EAD199725E200BA3903 /* Icon-Small-40.png in Resources */ = {isa = PBXBuildFile; fileRef = A3A62EA5199725E200BA3903 /* Icon-Small-40.png */; };
+		A3A62EAE199725E200BA3903 /* Icon-Small-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A3A62EA6199725E200BA3903 /* Icon-Small-40@2x.png */; };
+		A3A62EAF199725E200BA3903 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = A3A62EA7199725E200BA3903 /* Icon-Small.png */; };
+		A3A62EB0199725E200BA3903 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A3A62EA8199725E200BA3903 /* Icon-Small@2x.png */; };
+		A3A62EB1199725E200BA3903 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A3A62EA9199725E200BA3903 /* icon@2x.png */; };
 		A3E99F1B197F1AE400338597 /* Storyboard-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3E99F1A197F1AE400338597 /* Storyboard-iPad.storyboard */; };
 		A3F72798185FF3C60065B060 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F72797185FF3C60065B060 /* Foundation.framework */; };
 		A3F7279A185FF3C60065B060 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F72799185FF3C60065B060 /* CoreGraphics.framework */; };
@@ -41,16 +59,40 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A30A4B7A19933844001E2B81 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		A30A4B7C19933860001E2B81 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		A30A4B7E1993386C001E2B81 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A30A4B8019933896001E2B81 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		A30A4B82199338AA001E2B81 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A30A4B84199338BC001E2B81 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		A3452027192EC600002CF49B /* ColorButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorButton.h; sourceTree = "<group>"; };
 		A3452028192EC600002CF49B /* ColorButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorButton.m; sourceTree = "<group>"; };
 		A372457019885484000A5317 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		A372457119885484000A5317 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		A372457419885882000A5317 /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
-		A372457519885882000A5317 /* title@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "title@2x.png"; sourceTree = "<group>"; };
 		A3724581198E9F32000A5317 /* TopScoresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopScoresViewController.h; sourceTree = "<group>"; };
 		A3724582198E9F32000A5317 /* TopScoresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopScoresViewController.m; sourceTree = "<group>"; };
+		A37245881991988E000A5317 /* libFlurryAds_5.2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurryAds_5.2.0.a; sourceTree = "<group>"; };
+		A37245891991988E000A5317 /* libFlurry_5.2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_5.2.0.a; sourceTree = "<group>"; };
+		A372458C199198A9000A5317 /* FlurryAdDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlurryAdDelegate.h; sourceTree = "<group>"; };
+		A372458D199198A9000A5317 /* FlurryAds.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlurryAds.h; sourceTree = "<group>"; };
+		A372458E199198A9000A5317 /* Flurry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
 		A3A36DD9196CA7CA00EF95CB /* GameOverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverView.h; sourceTree = "<group>"; };
 		A3A36DDA196CA7CA00EF95CB /* GameOverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverView.m; sourceTree = "<group>"; };
+		A3A62E971996B75E00BA3903 /* GameCenterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCenterManager.h; sourceTree = "<group>"; };
+		A3A62E981996B75E00BA3903 /* GameCenterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCenterManager.m; sourceTree = "<group>"; };
+		A3A62E991996B75E00BA3903 /* NSDataAES256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAES256.h; sourceTree = "<group>"; };
+		A3A62E9A1996B75E00BA3903 /* NSDataAES256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataAES256.m; sourceTree = "<group>"; };
+		A3A62E9B1996B75E00BA3903 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		A3A62E9C1996B75E00BA3903 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		A3A62EA01996B77300BA3903 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		A3A62EA2199725E200BA3903 /* icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-60@2x.png"; sourceTree = "<group>"; };
+		A3A62EA3199725E200BA3903 /* icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-76.png"; sourceTree = "<group>"; };
+		A3A62EA4199725E200BA3903 /* icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-76@2x.png"; sourceTree = "<group>"; };
+		A3A62EA5199725E200BA3903 /* Icon-Small-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-40.png"; sourceTree = "<group>"; };
+		A3A62EA6199725E200BA3903 /* Icon-Small-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-40@2x.png"; sourceTree = "<group>"; };
+		A3A62EA7199725E200BA3903 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		A3A62EA8199725E200BA3903 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		A3A62EA9199725E200BA3903 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		A3E99F1A197F1AE400338597 /* Storyboard-iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Storyboard-iPad.storyboard"; sourceTree = "<group>"; };
 		A3F72794185FF3C60065B060 /* Colors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Colors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3F72797185FF3C60065B060 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -78,9 +120,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3A62EA11996B77300BA3903 /* GameKit.framework in Frameworks */,
+				A30A4B85199338BC001E2B81 /* libz.dylib in Frameworks */,
+				A30A4B83199338AA001E2B81 /* SystemConfiguration.framework in Frameworks */,
+				A30A4B8119933896001E2B81 /* StoreKit.framework in Frameworks */,
+				A30A4B7F1993386C001E2B81 /* Security.framework in Frameworks */,
+				A30A4B7D19933860001E2B81 /* MediaPlayer.framework in Frameworks */,
+				A30A4B7B19933844001E2B81 /* AdSupport.framework in Frameworks */,
+				A372458A1991988E000A5317 /* libFlurryAds_5.2.0.a in Frameworks */,
 				A3F7279A185FF3C60065B060 /* CoreGraphics.framework in Frameworks */,
 				A3F7279C185FF3C60065B060 /* UIKit.framework in Frameworks */,
 				A3F72798185FF3C60065B060 /* Foundation.framework in Frameworks */,
+				A372458B1991988E000A5317 /* libFlurry_5.2.0.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,10 +151,29 @@
 		A372457319885864000A5317 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A372457419885882000A5317 /* title.png */,
-				A372457519885882000A5317 /* title@2x.png */,
+				A3A62EA2199725E200BA3903 /* icon-60@2x.png */,
+				A3A62EA3199725E200BA3903 /* icon-76.png */,
+				A3A62EA4199725E200BA3903 /* icon-76@2x.png */,
+				A3A62EA5199725E200BA3903 /* Icon-Small-40.png */,
+				A3A62EA6199725E200BA3903 /* Icon-Small-40@2x.png */,
+				A3A62EA7199725E200BA3903 /* Icon-Small.png */,
+				A3A62EA8199725E200BA3903 /* Icon-Small@2x.png */,
+				A3A62EA9199725E200BA3903 /* icon@2x.png */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		A3A62E961996B75E00BA3903 /* GC Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A3A62E971996B75E00BA3903 /* GameCenterManager.h */,
+				A3A62E981996B75E00BA3903 /* GameCenterManager.m */,
+				A3A62E991996B75E00BA3903 /* NSDataAES256.h */,
+				A3A62E9A1996B75E00BA3903 /* NSDataAES256.m */,
+				A3A62E9B1996B75E00BA3903 /* Reachability.h */,
+				A3A62E9C1996B75E00BA3903 /* Reachability.m */,
+			);
+			path = "GC Manager";
 			sourceTree = "<group>";
 		};
 		A3DA76C4192DA7D3003079A3 /* iPad */ = {
@@ -135,6 +205,15 @@
 		A3F72796185FF3C60065B060 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A3A62EA01996B77300BA3903 /* GameKit.framework */,
+				A30A4B84199338BC001E2B81 /* libz.dylib */,
+				A30A4B82199338AA001E2B81 /* SystemConfiguration.framework */,
+				A30A4B8019933896001E2B81 /* StoreKit.framework */,
+				A30A4B7E1993386C001E2B81 /* Security.framework */,
+				A30A4B7C19933860001E2B81 /* MediaPlayer.framework */,
+				A30A4B7A19933844001E2B81 /* AdSupport.framework */,
+				A37245881991988E000A5317 /* libFlurryAds_5.2.0.a */,
+				A37245891991988E000A5317 /* libFlurry_5.2.0.a */,
 				A3F72797185FF3C60065B060 /* Foundation.framework */,
 				A3F72799185FF3C60065B060 /* CoreGraphics.framework */,
 				A3F7279B185FF3C60065B060 /* UIKit.framework */,
@@ -146,6 +225,7 @@
 		A3F7279D185FF3C60065B060 /* Colors */ = {
 			isa = PBXGroup;
 			children = (
+				A3A62E961996B75E00BA3903 /* GC Manager */,
 				A372457319885864000A5317 /* Resources */,
 				A3DA76C4192DA7D3003079A3 /* iPad */,
 				A3F727A6185FF3C60065B060 /* AppDelegate.h */,
@@ -164,6 +244,9 @@
 				A372457119885484000A5317 /* HomeViewController.m */,
 				A3724581198E9F32000A5317 /* TopScoresViewController.h */,
 				A3724582198E9F32000A5317 /* TopScoresViewController.m */,
+				A372458C199198A9000A5317 /* FlurryAdDelegate.h */,
+				A372458D199198A9000A5317 /* FlurryAds.h */,
+				A372458E199198A9000A5317 /* Flurry.h */,
 			);
 			path = Colors;
 			sourceTree = "<group>";
@@ -241,9 +324,12 @@
 		A3F7278C185FF3C60065B060 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Cody Mace";
 				TargetAttributes = {
+					A3F72793185FF3C60065B060 = {
+						DevelopmentTeam = NE2625R7RX;
+					};
 					A3F727AE185FF3C60065B060 = {
 						TestTargetID = A3F72793185FF3C60065B060;
 					};
@@ -272,12 +358,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3A62EAA199725E200BA3903 /* icon-60@2x.png in Resources */,
 				A3F727A2185FF3C60065B060 /* InfoPlist.strings in Resources */,
 				A3E99F1B197F1AE400338597 /* Storyboard-iPad.storyboard in Resources */,
 				A3F727AA185FF3C60065B060 /* Images.xcassets in Resources */,
+				A3A62EAE199725E200BA3903 /* Icon-Small-40@2x.png in Resources */,
+				A3A62EB1199725E200BA3903 /* icon@2x.png in Resources */,
+				A3A62EAD199725E200BA3903 /* Icon-Small-40.png in Resources */,
 				A3F727C7185FF4070065B060 /* Storyboard.storyboard in Resources */,
-				A372457619885882000A5317 /* title.png in Resources */,
-				A372457719885882000A5317 /* title@2x.png in Resources */,
+				A3A62EAC199725E200BA3903 /* icon-76@2x.png in Resources */,
+				A3A62EAF199725E200BA3903 /* Icon-Small.png in Resources */,
+				A3A62EAB199725E200BA3903 /* icon-76.png in Resources */,
+				A3A62EB0199725E200BA3903 /* Icon-Small@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,11 +390,14 @@
 			files = (
 				A3F727A8185FF3C60065B060 /* AppDelegate.m in Sources */,
 				A3F727CA185FFAA70065B060 /* GameViewController.m in Sources */,
+				A3A62E9D1996B75E00BA3903 /* GameCenterManager.m in Sources */,
+				A3A62E9F1996B75E00BA3903 /* Reachability.m in Sources */,
 				A3F727A4185FF3C60065B060 /* main.m in Sources */,
 				A3724583198E9F32000A5317 /* TopScoresViewController.m in Sources */,
 				A3A36DDB196CA7CA00EF95CB /* GameOverView.m in Sources */,
 				A3452029192EC600002CF49B /* ColorButton.m in Sources */,
 				A372457219885484000A5317 /* HomeViewController.m in Sources */,
+				A3A62E9E1996B75E00BA3903 /* NSDataAES256.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,7 +443,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -387,7 +481,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -419,13 +512,19 @@
 		A3F727C1185FF3C60065B060 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Cody Mace (5SP66PFPWS)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Colors/Colors-Prefix.pch";
 				INFOPLIST_FILE = "Colors/Colors-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "D2778957-26A3-400F-9C0A-906483AFBBBF";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -434,13 +533,19 @@
 		A3F727C2185FF3C60065B060 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Cody Mace (NE2625R7RX)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Colors/Colors-Prefix.pch";
 				INFOPLIST_FILE = "Colors/Colors-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "D2778957-26A3-400F-9C0A-906483AFBBBF";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -449,7 +554,6 @@
 		A3F727C4185FF3C60065B060 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Colors.app/Colors";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -472,7 +576,6 @@
 		A3F727C5185FF3C60065B060 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Colors.app/Colors";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

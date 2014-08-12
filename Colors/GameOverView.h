@@ -14,4 +14,7 @@
 @property UIButton *againButton;
 @property UIButton *quitButton;
 
+- (void)loadAd;
+- (void)showAd;
+- (void)removeAd;
 @end

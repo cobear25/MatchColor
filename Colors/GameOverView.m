@@ -7,6 +7,9 @@
 //
 
 #import "GameOverView.h"
+#import "FlurryAds.h"
+
+#define ADSPACE @"game-over-space"
 
 @interface GameOverView()
 
@@ -59,6 +62,19 @@
         [self addSubview:self.scoreLabel];
     }
     return self;
+}
+
+-(void) loadAd {
+    [FlurryAds fetchAdForSpace:ADSPACE frame:self.frame size:BANNER_BOTTOM];
+}
+
+-(void) showAd {
+    if ([FlurryAds adReadyForSpace:ADSPACE]) {
+        [FlurryAds displayAdForSpace:ADSPACE onView:self];
+    }
+}
+-(void) removeAd {
+    [FlurryAds removeAdFromSpace:ADSPACE];
 }
 
 - (void)againButtonPressed {
