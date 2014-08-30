@@ -127,14 +127,15 @@
         NSSortDescriptor *lowestToHighest = [NSSortDescriptor sortDescriptorWithKey:@"self" ascending:YES];
         [oldArray sortUsingDescriptors:[NSArray arrayWithObject:lowestToHighest]];
 
+        NSInteger scoreToSubmit;
         if (oldArray.count >= 5) {
             NSMutableArray *newArray = [[oldArray subarrayWithRange:NSMakeRange(0, 5)] mutableCopy];
             [[NSUserDefaults standardUserDefaults] setObject:newArray forKey:@"topscores"];
+            scoreToSubmit = (NSInteger)([[newArray objectAtIndex:0] doubleValue]* 100)+1;
         } else {
             [[NSUserDefaults standardUserDefaults] setObject:oldArray forKey:@"topscores"];
+            scoreToSubmit = (NSInteger)([[oldArray objectAtIndex:0] doubleValue]* 100)+1;
         }
-        NSInteger mScore = (NSInteger)([[oldArray objectAtIndex:0] doubleValue]* 100);
-        NSInteger scoreToSubmit = (NSInteger)(self.timePassed * 100)+1;
         [[GameCenterManager sharedManager] saveAndReportScore:scoreToSubmit leaderboard:@"FastestTimes" sortOrder:GameCenterSortOrderLowToHigh];
         [[NSUserDefaults standardUserDefaults] synchronize];
     }
