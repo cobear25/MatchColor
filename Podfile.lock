@@ -1,14 +1,14 @@
 PODS:
-  - Flurry-iOS-SDK/FlurryAds (7.8.2):
+  - Flurry-iOS-SDK/FlurryAds (7.9.2):
     - Flurry-iOS-SDK/FlurrySDK
-  - Flurry-iOS-SDK/FlurrySDK (7.8.2)
+  - Flurry-iOS-SDK/FlurrySDK (7.9.2)
 
 DEPENDENCIES:
   - Flurry-iOS-SDK/FlurryAds
   - Flurry-iOS-SDK/FlurrySDK
 
 SPEC CHECKSUMS:
-  Flurry-iOS-SDK: 8ed76252016d0162a893363c108a010ab97d424c
+  Flurry-iOS-SDK: 300dc1d78443dea3d433a38e76292f20f14f0a96
 
 PODFILE CHECKSUM: 7abf01b4f32644db9d46a57fe80852a46465b747
 
