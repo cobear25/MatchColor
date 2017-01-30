@@ -11,7 +11,11 @@
 #import "GameOverView.h"
 #import "GameCenterManager.h"
 
-@interface GameViewController () <UIAlertViewDelegate>
+#import <Flurry_iOS_SDK/Flurry.h>
+#import <Flurry_iOS_SDK/FlurryAdBanner.h>
+#import <Flurry_iOS_SDK/FlurryAdBannerDelegate.h>
+
+@interface GameViewController () <UIAlertViewDelegate, FlurryAdBannerDelegate>
 @property (strong, nonatomic) IBOutletCollection(ColorButton) NSArray *buttons;
 @property (strong, nonatomic) NSArray *colorArray;
 @property (assign, nonatomic) NSInteger indexToMatch;
@@ -36,8 +40,14 @@
     [self.view addSubview:self.gameOverView];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(againButtonPressed) name:@"againButtonPressed" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(quitButtonPressed) name:@"quitButtonPressed" object:nil];
-    [self.gameOverView removeAd];
-    [self.gameOverView loadAd];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+
+    adBanner = [[FlurryAdBanner alloc] initWithSpace:adSpaceName];
+    adBanner.adDelegate = self;
+    [adBanner fetchAdForFrame:self.view.frame];
 }
 
 - (void)viewDidLayoutSubviews
@@ -100,7 +110,6 @@
     {
         [self.timer invalidate];
         self.gameOverView.hidden = NO;
-        [self.gameOverView showAd];
         if (self.indexToMatch != 1) {
             [self.gameOverView.againButton setBackgroundColor:[UIColor colorWithRed:168/255.0 green:230/255.0 blue:1 alpha:1]];
         } else {
@@ -142,17 +151,18 @@
 }
 
 - (void)againButtonPressed {
-    [self.gameOverView removeAd];
     self.gameOverView.hidden = YES;
     [self.timer fire];
     [self shuffleButtons];
-    [self.gameOverView loadAd];
+    adBanner = nil;
+    adBanner.adDelegate = nil;
+    adBanner = [[FlurryAdBanner alloc] initWithSpace:adSpaceName];
+    adBanner.adDelegate = self;
+    [adBanner fetchAdForFrame:self.view.frame];
 }
 - (void)quitButtonPressed {
-    [self.gameOverView removeAd];
     self.gameOverView.hidden = YES;
     [self.navigationController popToRootViewControllerAnimated:YES];
-    [self.gameOverView loadAd];
 }
 
 - (void)shuffleButtons
@@ -208,5 +218,29 @@
     {
         [self shuffleButtons];
     }
+}
+
+NSString *adSpaceName = @"game-over-space";
+FlurryAdBanner* adBanner = nil;
+- (void) adBanner:(FlurryAdBanner*) bannerAd adError:(FlurryAdError) adError errorDescription:(NSError*) errorDescription {
+    NSString *desc = errorDescription.userInfo.description;
+    NSLog(@"%@", desc);
+}
+
+- (void) adBannerDidFetchAd:(FlurryAdBanner *) adBanner
+{
+    NSLog(@"Did fetch ad");
+    [adBanner displayAdInView:self.gameOverView viewControllerForPresentation:self];
+}
+
+- (void)adBannerDidRender:(FlurryAdBanner *)bannerAd {
+    NSLog(@"Banner did render");
+}
+
+-(void) viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    adBanner.adDelegate = nil;
+    adBanner = nil;
+
 }
 @end

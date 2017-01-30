@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9DA77AC012759687AA844EB2 /* Pods_Colors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2867695FCE32794B73812237 /* Pods_Colors.framework */; };
 		A30A4B7B19933844001E2B81 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A30A4B7A19933844001E2B81 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		A30A4B7D19933860001E2B81 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A30A4B7C19933860001E2B81 /* MediaPlayer.framework */; };
 		A30A4B7F1993386C001E2B81 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A30A4B7E1993386C001E2B81 /* Security.framework */; };
@@ -14,10 +15,9 @@
 		A30A4B83199338AA001E2B81 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A30A4B82199338AA001E2B81 /* SystemConfiguration.framework */; };
 		A30A4B85199338BC001E2B81 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A30A4B84199338BC001E2B81 /* libz.dylib */; };
 		A3452029192EC600002CF49B /* ColorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A3452028192EC600002CF49B /* ColorButton.m */; };
+		A35E58C51E3BBEF100CF2768 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A35E58C41E3BBEF100CF2768 /* Launch Screen.storyboard */; };
 		A372457219885484000A5317 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A372457119885484000A5317 /* HomeViewController.m */; };
 		A3724583198E9F32000A5317 /* TopScoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3724582198E9F32000A5317 /* TopScoresViewController.m */; };
-		A372458A1991988E000A5317 /* libFlurryAds_5.2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A37245881991988E000A5317 /* libFlurryAds_5.2.0.a */; };
-		A372458B1991988E000A5317 /* libFlurry_5.2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A37245891991988E000A5317 /* libFlurry_5.2.0.a */; };
 		A3A36DDB196CA7CA00EF95CB /* GameOverView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A36DDA196CA7CA00EF95CB /* GameOverView.m */; };
 		A3A62E9D1996B75E00BA3903 /* GameCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A62E981996B75E00BA3903 /* GameCenterManager.m */; };
 		A3A62E9E1996B75E00BA3903 /* NSDataAES256.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A62E9A1996B75E00BA3903 /* NSDataAES256.m */; };
@@ -59,6 +59,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2867695FCE32794B73812237 /* Pods_Colors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Colors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33E9F23D7A36BC549ECFA3E0 /* Pods-Colors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Colors.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Colors/Pods-Colors.debug.xcconfig"; sourceTree = "<group>"; };
+		67991C67A537F5AF4F8305CB /* Pods-Colors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Colors.release.xcconfig"; path = "Pods/Target Support Files/Pods-Colors/Pods-Colors.release.xcconfig"; sourceTree = "<group>"; };
 		A30A4B7A19933844001E2B81 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		A30A4B7C19933860001E2B81 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		A30A4B7E1993386C001E2B81 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -67,15 +70,13 @@
 		A30A4B84199338BC001E2B81 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		A3452027192EC600002CF49B /* ColorButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorButton.h; sourceTree = "<group>"; };
 		A3452028192EC600002CF49B /* ColorButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorButton.m; sourceTree = "<group>"; };
+		A35E58C41E3BBEF100CF2768 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		A372457019885484000A5317 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		A372457119885484000A5317 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		A3724581198E9F32000A5317 /* TopScoresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopScoresViewController.h; sourceTree = "<group>"; };
 		A3724582198E9F32000A5317 /* TopScoresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopScoresViewController.m; sourceTree = "<group>"; };
 		A37245881991988E000A5317 /* libFlurryAds_5.2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurryAds_5.2.0.a; sourceTree = "<group>"; };
 		A37245891991988E000A5317 /* libFlurry_5.2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_5.2.0.a; sourceTree = "<group>"; };
-		A372458C199198A9000A5317 /* FlurryAdDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlurryAdDelegate.h; sourceTree = "<group>"; };
-		A372458D199198A9000A5317 /* FlurryAds.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlurryAds.h; sourceTree = "<group>"; };
-		A372458E199198A9000A5317 /* Flurry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
 		A3A36DD9196CA7CA00EF95CB /* GameOverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverView.h; sourceTree = "<group>"; };
 		A3A36DDA196CA7CA00EF95CB /* GameOverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverView.m; sourceTree = "<group>"; };
 		A3A62E971996B75E00BA3903 /* GameCenterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCenterManager.h; sourceTree = "<group>"; };
@@ -127,11 +128,10 @@
 				A30A4B7F1993386C001E2B81 /* Security.framework in Frameworks */,
 				A30A4B7D19933860001E2B81 /* MediaPlayer.framework in Frameworks */,
 				A30A4B7B19933844001E2B81 /* AdSupport.framework in Frameworks */,
-				A372458A1991988E000A5317 /* libFlurryAds_5.2.0.a in Frameworks */,
 				A3F7279A185FF3C60065B060 /* CoreGraphics.framework in Frameworks */,
 				A3F7279C185FF3C60065B060 /* UIKit.framework in Frameworks */,
 				A3F72798185FF3C60065B060 /* Foundation.framework in Frameworks */,
-				A372458B1991988E000A5317 /* libFlurry_5.2.0.a in Frameworks */,
+				9DA77AC012759687AA844EB2 /* Pods_Colors.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +148,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75CF73B3D788B33F62A754F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				33E9F23D7A36BC549ECFA3E0 /* Pods-Colors.debug.xcconfig */,
+				67991C67A537F5AF4F8305CB /* Pods-Colors.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A372457319885864000A5317 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +199,7 @@
 				A3F727B6185FF3C60065B060 /* ColorsTests */,
 				A3F72796185FF3C60065B060 /* Frameworks */,
 				A3F72795185FF3C60065B060 /* Products */,
+				75CF73B3D788B33F62A754F1 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -218,6 +228,7 @@
 				A3F72799185FF3C60065B060 /* CoreGraphics.framework */,
 				A3F7279B185FF3C60065B060 /* UIKit.framework */,
 				A3F727B0185FF3C60065B060 /* XCTest.framework */,
+				2867695FCE32794B73812237 /* Pods_Colors.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -244,9 +255,7 @@
 				A372457119885484000A5317 /* HomeViewController.m */,
 				A3724581198E9F32000A5317 /* TopScoresViewController.h */,
 				A3724582198E9F32000A5317 /* TopScoresViewController.m */,
-				A372458C199198A9000A5317 /* FlurryAdDelegate.h */,
-				A372458D199198A9000A5317 /* FlurryAds.h */,
-				A372458E199198A9000A5317 /* Flurry.h */,
+				A35E58C41E3BBEF100CF2768 /* Launch Screen.storyboard */,
 			);
 			path = Colors;
 			sourceTree = "<group>";
@@ -287,9 +296,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3F727C0185FF3C60065B060 /* Build configuration list for PBXNativeTarget "Colors" */;
 			buildPhases = (
+				9D6C271D8209AF0CBA314174 /* [CP] Check Pods Manifest.lock */,
 				A3F72790185FF3C60065B060 /* Sources */,
 				A3F72791185FF3C60065B060 /* Frameworks */,
 				A3F72792185FF3C60065B060 /* Resources */,
+				8532BEC6105ABE1B8859A218 /* [CP] Embed Pods Frameworks */,
+				D7C3115E54EE72FAD988A595 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -362,6 +374,7 @@
 				A3F727A2185FF3C60065B060 /* InfoPlist.strings in Resources */,
 				A3E99F1B197F1AE400338597 /* Storyboard-iPad.storyboard in Resources */,
 				A3F727AA185FF3C60065B060 /* Images.xcassets in Resources */,
+				A35E58C51E3BBEF100CF2768 /* Launch Screen.storyboard in Resources */,
 				A3A62EAE199725E200BA3903 /* Icon-Small-40@2x.png in Resources */,
 				A3A62EB1199725E200BA3903 /* icon@2x.png in Resources */,
 				A3A62EAD199725E200BA3903 /* Icon-Small-40.png in Resources */,
@@ -382,6 +395,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8532BEC6105ABE1B8859A218 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Colors/Pods-Colors-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D6C271D8209AF0CBA314174 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D7C3115E54EE72FAD988A595 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Colors/Pods-Colors-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A3F72790185FF3C60065B060 /* Sources */ = {
@@ -511,14 +572,17 @@
 		};
 		A3F727C1185FF3C60065B060 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33E9F23D7A36BC549ECFA3E0 /* Pods-Colors.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				ENV_BUNDLE_DISPLAY_NAME = "Color Match Dbg";
+				ENV_BUNDLE_ID = com.codymace.colormatch.dbg;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Colors/Colors-Prefix.pch";
 				INFOPLIST_FILE = "Colors/Colors-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -532,14 +596,17 @@
 		};
 		A3F727C2185FF3C60065B060 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67991C67A537F5AF4F8305CB /* Pods-Colors.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				ENV_BUNDLE_DISPLAY_NAME = "Color Match";
+				ENV_BUNDLE_ID = com.codymace.colormatch;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Colors/Colors-Prefix.pch";
 				INFOPLIST_FILE = "Colors/Colors-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",

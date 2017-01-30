@@ -10,29 +10,29 @@
 	<string>Colors</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>F06EB389-4143-4DEB-B4CE-B35872390AC7</key>
-		<string>ssh://github.com/cobear25/MatchColor.git</string>
+		<key>1D49710356F60282D03E05DE4AE47E669E3FFD08</key>
+		<string>github.com:cobear25/MatchColor.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Colors.xcodeproj/project.xcworkspace</string>
+	<string>Colors.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>F06EB389-4143-4DEB-B4CE-B35872390AC7</key>
+		<key>1D49710356F60282D03E05DE4AE47E669E3FFD08</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/cobear25/MatchColor.git</string>
+	<string>github.com:cobear25/MatchColor.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>F06EB389-4143-4DEB-B4CE-B35872390AC7</string>
+	<string>1D49710356F60282D03E05DE4AE47E669E3FFD08</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>F06EB389-4143-4DEB-B4CE-B35872390AC7</string>
+			<string>1D49710356F60282D03E05DE4AE47E669E3FFD08</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Colors</string>
 		</dict>

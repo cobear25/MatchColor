@@ -10,4 +10,8 @@
 
 @interface GameViewController : UIViewController
 
+- (void)loadAd;
+- (void) showAdFromviewController:(UIViewController*) viewController;
+- (void)removeAd;
+
 @end
