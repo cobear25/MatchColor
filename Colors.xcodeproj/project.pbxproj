@@ -574,6 +574,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33E9F23D7A36BC549ECFA3E0 /* Pods-Colors.debug.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
@@ -598,6 +599,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 67991C67A537F5AF4F8305CB /* Pods-Colors.release.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;

@@ -25,7 +25,7 @@
         NSInteger buttonRadius = buttonWidth/2;
         NSInteger viewWidth = frame.size.width;
         NSInteger viewHeight = frame.size.height;
-        NSInteger buttonFontSize = viewWidth/16;
+        NSInteger buttonFontSize = viewWidth/10;
 
         // Create again button
         self.againButton = [[UIButton alloc] initWithFrame:CGRectMake(viewWidth/2 - buttonRadius, viewHeight/2-buttonRadius, buttonWidth, buttonWidth)];
@@ -33,6 +33,9 @@
         self.againButton.backgroundColor = [UIColor colorWithRed:0.1 green:1.0 blue:0.1 alpha:0.5];
         [self.againButton addTarget:self action:@selector(againButtonPressed) forControlEvents:UIControlEventTouchUpInside];
         self.againButton.titleLabel.font = [UIFont fontWithName:@"Optima-ExtraBlack" size:buttonFontSize];
+        [self.againButton.titleLabel setTextAlignment:NSTextAlignmentCenter];
+        self.againButton.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
+        self.againButton.layer.cornerRadius = 10;
         [self addSubview:self.againButton];
 
         // Create quit button
@@ -41,6 +44,7 @@
         self.quitButton.backgroundColor = [UIColor colorWithRed:1.0 green:0.1 blue:0.1 alpha:0.5];
         [self.quitButton addTarget:self action:@selector(quitButtonPressed) forControlEvents:UIControlEventTouchUpInside];
         self.quitButton.titleLabel.font = [UIFont fontWithName:@"Optima-ExtraBlack" size:buttonFontSize];
+        self.quitButton.layer.cornerRadius = 10;
         [self addSubview:self.quitButton];
 
         // Create done label

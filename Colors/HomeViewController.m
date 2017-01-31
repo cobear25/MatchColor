@@ -16,13 +16,14 @@
 
 @implementation HomeViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationSlide];
     [self.topScoresButton.titleLabel setTextAlignment:NSTextAlignmentCenter];
     self.playButton.frame = CGRectMake(self.view.frame.size.width/2 - self.playButton.frame.size.width/2, self.view.frame.size.height/2 - self.playButton.frame.size.height/2, self.playButton.frame.size.width, self.playButton.frame.size.height);
     self.navigationController.navigationBarHidden = YES;
+    self.playButton.layer.cornerRadius = 10;
+    self.topScoresButton.layer.cornerRadius = 8;
 }
 
 @end

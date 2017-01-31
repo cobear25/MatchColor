@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *score4Label;
 @property (weak, nonatomic) IBOutlet UILabel *score5Label;
 @property (weak, nonatomic) IBOutlet UIButton *gameCenterButton;
+@property (weak, nonatomic) IBOutlet UIButton *doneButton;
 
 @end
 
@@ -26,6 +27,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self.gameCenterButton.titleLabel setTextAlignment:NSTextAlignmentCenter];
+    self.gameCenterButton.layer.cornerRadius = 8;
+    self.doneButton.layer.cornerRadius = 8;
 
     if ([[NSUserDefaults standardUserDefaults] objectForKey:@"topscores"] != NULL) {
         NSArray *array = [[NSUserDefaults standardUserDefaults] objectForKey:@"topscores"];
